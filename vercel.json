@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/webhook",
+      "dest": "api/webhook.js"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": "@shadowreaper_banding_bot_token",
+    "OWNER_ID": "1234567890",
+    "ATLANTIS_API_KEY": "your_atlantis_api_key",
+    "ATLANTIS_MERCHANT_ID": "your_merchant_id",
+    "QRIS_CALLBACK_URL": "https://yourdomain.vercel.app/api/callback"
+  }
+}

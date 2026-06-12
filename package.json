@@ -1,0 +1,14 @@
+{
+  "name": "shadowreaper-wa-banding",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "node api/webhook.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.15.3",
+    "axios": "^1.6.7",
+    "nodemailer": "^6.9.9",
+    "node-cron": "^3.0.3",
+    "express": "^4.18.2"
+  }
+}
